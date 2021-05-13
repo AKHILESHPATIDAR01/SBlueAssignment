@@ -1,38 +1,165 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 30px;
+}
+.displaybox {
+  width: 380px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.tasks {
+  padding: 8px;
+  width: 90%;
+}
+.plus {
+  padding: 5px 0;
+  width: 10%;
   text-align: center;
+  border-left: 1px solid black;
+  font-weight: 800;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainbox {
+  width: 380px;
+  height: 300px;
+  background-color: rgb(217, 237, 243);
+  border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label{
+  margin-bottom: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input{
+  height: 28px;
+}
+
+select{
+  height: 28px;
+  outline: none;
+}
+
+.taskDescBox{
+  width: 90%;
+  height: 20%;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.datetimeBox{
+  width: 90%;
+  height: 20%;
+  margin: 10px auto;
+  display: flex;
+}
+
+.datetimeBox .dateBox label{
+  margin-bottom: 8px;
+}
+
+.datetimeBox .dateBox input{
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: flex-end; */
+  height: 28px;
+  margin-top: 8px;
+}
+
+
+.datetimeBox .timeBox{
+  display: flex;
+  flex-direction: column;
+}
+.timeBox label{
+  margin-left: 20px;
+}
+
+
+.datetimeBox .timeBox select{
+  height: 28px;
+  width: 175px;
+  margin-left: 20px;
+  /* margin-bottom: 10px; */
+}
+
+
+.userBox{
+  width: 90%;
+  height: 20%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.savebtnBox{
+  width: 90%;
+  height: 20%;
+  margin: 25px auto;
+  display: flex;
+  justify-content: flex-end;
+  /* position: relative; */
+}
+
+.savebtnBox button{
+  height: 30px;
+}
+
+.savebtn{
+  width: 80px;
+  border: none;
   color: white;
+  background-color: #28a745;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.cancelbtn{
+  margin-right: 15px;
+  width: 80px;
+  border: none;
+  background-color: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DisplayTasksBox{
+  width: 380px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.OuterBox{
+  margin: 10px;
+  display: flex;
+}
+
+.pic{
+  width: 15%;
+  height: 40px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.details{
+  width: 55%;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.editbtns{
+  width: 30%;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit{
+
 }
